@@ -1,0 +1,43 @@
+                                        Pandas File Handling and Data Manipulation Guide
+
+Pandas: Reading and Writing Files
+
+            Category	                      Topics Covered
+	
+       > 📌 Introduction              - ✅ Overview of Pandas file handling.
+				      - 📂 Supported formats: CSV, Excel, JSON, SQL, etc.
+
+       > 📥 Reading Files             - Reading CSV files using - 📄 pd.read_csv("file.csv").
+                                      - Reading Excel files using - 📊 pd.read_excel("file.xlsx", sheet_name="Sheet1").
+                                      - Reading JSON files using - 📋 pd.read_json("file.json").
+       
+       > 📤 Writing Files             - Saving to CSV using - 💾 df.to_csv("output.csv", index=False).
+                                      - Saving to Excel using - 📈 df.to_excel("output.xlsx", index=False).
+       
+       > 🌍 Real-World Applications   -🛒 Handling e-commerce data (product, user, and transaction records).
+ 				      -🧹 Cleaning data and generating actionable insights.
+
+
+       > ⚠️ Key Considerations        - Resolving 🔠 Encoding issues with encoding = " utf- 8 " or encoding =" latin1 ".
+				      - Processing  🏗️ large datasets in smaller chunks using chunk-size parameter.
+				      - Reading/writing files from ☁️ cloud storage platforms using libraries like gcsfs for Google Cloud, s3fs for AWS.
+       
+       
+       > 🔍 Exploring Data            - Previewing data using - 👀 df.head() / df.tail().
+				      - Understanding data structure using - ℹ️ df.info() / df.describe().
+				      - Checking the dataset size using - 📏 df.shape / df.columns.
+
+
+       > 🎯 Filtering and Selecting   - Selecting specific columns with - 🏷️ Column selection: df["col"] or df[["col1", "col2"]].
+				      - Filtering rows using conditions with & (AND) and '
+				      - 🔎 Row filtering: df[(df["col"] > 10) & (df["col2"] == "value")]
+				      - Applying filtering techniques for real-world data scenarios (- 📊 Real-world filtering use cases). 
+
+
+
+
+
+
+
+
+

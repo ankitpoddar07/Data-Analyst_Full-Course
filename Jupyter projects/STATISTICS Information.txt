@@ -1,0 +1,86 @@
+DATA from : ( data.gov )
+--------------------------
+Jupyter codes : 
+
+Ques : - Maximizing Revenue for Taxi Cab Drivers through Payment Type Analysis :
+Problem Statement :
+In the fast-paced taxi booking sector, making the most of revenue is essential for long-term success and driver happiness. Our goal is to use data-driven insights to
+maximise revenue streams for taxi drivers in order to meet this need. Our research aims to determine whether payment methods have an impact on fare pricing by
+focusing on the relationship between payment type and fare amount.
+
+Objective :
+This project's main goal is to run an AIB test to examine the relationship between the total fare and the method Of payment. We use Python hypothesis testing and
+descriptive statistics to extract useful information that can help taxi drivers generate more cash. In particular, we want to find out if there is a big difference in the fares
+for those who pay with credit cards versus those who pay with cash.
+Research Question :
+Is there a relationship between total fare amount and payment type and can we nudge customers towards payment methods that generate higher revenue for drivers,
+without negatively impacting customer experience?
+
+CODES : - 
+
+# importing Libraries :
+
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import scipy.stats as st
+import warnings
+warnings.filterwarnings('ignore')
+
+# Loading the dataset : 
+
+df = pd.read_csv('Electric_Vehicle_Population_Data.csv')
+
+df.head()
+
+# Exploratory Data Analysis :  
+
+df.shape
+
+(235692, 17)
+
+df.dtypes :
+
+VIN (1-10)                                            object
+County                                                object
+City                                                  object
+State                                                 object
+Postal Code                                          float64
+Model Year                                             int64
+Make                                                  object
+Model                                                 object
+Electric Vehicle Type                                 object
+Clean Alternative Fuel Vehicle (CAFV) Eligibility     object
+Electric Range                                       float64
+Base MSRP                                            float64
+Legislative District                                 float64
+DOL Vehicle ID                                         int64
+Vehicle Location                                      object
+Electric Utility                                      object
+2020 Census Tract                                    float64
+dtype: object
+
+df.isnull().sum()
+
+VIN (1-10)                                             0
+County                                                 3
+City                                                   3
+State                                                  0
+Postal Code                                            3
+Model Year                                             0
+Make                                                   0
+Model                                                  0
+Electric Vehicle Type                                  0
+Clean Alternative Fuel Vehicle (CAFV) Eligibility      0
+Electric Range                                        36
+Base MSRP                                             36
+Legislative District                                 494
+DOL Vehicle ID                                         0
+Vehicle Location                                      10
+Electric Utility                                       3
+2020 Census Tract                                      3
+dtype: int64
+
+
+-------------------------------------------------------------------------------------------------
+

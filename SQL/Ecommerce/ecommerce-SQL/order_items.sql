@@ -1,0 +1,1 @@
+SELECT * FROM ecommerce.order_items;
